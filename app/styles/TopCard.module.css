@@ -1,0 +1,118 @@
+/* TopCard.module.css */
+
+.topCard {
+  box-sizing: border-box;
+  position: absolute;
+  width: 328px;
+  height: 156px;
+  left: 16px;
+  top: 112px;
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  border-radius: 20px;
+}
+
+.categoryGroup {
+  position: absolute;
+  width: 85px;
+  height: 46px;
+  left: 98px;
+  top: 30px;
+}
+
+.categoryTitle {
+  position: absolute;
+  width: 85px;
+  height: 26px;
+  left: 98px;
+  top: 30px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #2C2D2E;
+}
+
+.categoryText {
+  position: absolute;
+  width: 75px;
+  height: 20px;
+  left: 98px;
+  top: 56px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #87898F;
+}
+
+.iconRight {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 24px;
+  top: 41px;
+  background: #87898F;
+  border-radius: 50%;
+}
+
+.progressGroup {
+  position: absolute;
+  width: 280px;
+  height: 34px;
+  left: 24px;
+  top: 98px;
+}
+
+.progressBar {
+  position: absolute;
+  height: 6px;
+  border-radius: 5px;
+  background: #52A754;
+}
+
+.progressBar.opacityLow {
+  opacity: 0.1;
+}
+
+.statusText {
+  position: absolute;
+  width: 214px;
+  height: 20px;
+  left: 24px;
+  top: 98px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end;
+  color: #2C2D2E;
+}
+
+.avatarGroup {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  left: 24px;
+  top: 24px;
+  background: #FFE3DD;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.avatarIcon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: calc(50% - 16px);
+  top: calc(50% - 16px);
+  background: #FF7355;
+}
