@@ -1,16 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function page() {
   return (
     <main>
       <div className="appbar">
-        <Image
-          src="/arrowLeft.svg"
-          alt="Arrow"
-          width={19.5}
-          height={15.5}
-          className="arrow"
-        />
+        <Link href="/">
+          <Image
+            src="/arrowLeft.svg"
+            alt="Arrow"
+            width={19.5}
+            height={15.5}
+            className="arrow"
+          />
+        </Link>
         <span className="appbar_title">Learning</span>
       </div>
       <div className="tab">
