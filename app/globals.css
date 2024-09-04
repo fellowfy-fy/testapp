@@ -1,17 +1,3 @@
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   background: linear-gradient(
       to bottom,
@@ -27,4 +13,57 @@ main {
   height: 800px;
   background: #f9f9f9;
   margin: auto;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --paragraph-regular-03: Inter;
+
+  /* font sizes */
+  --paragraph-regular-03-size: 14px;
+  --header-4-size: 20px;
+  --header-6-size: 18px;
+  --paragraph-bold-04-size: 12px;
+  --paragraph-bold-02-size: 16px;
+
+  /* Colors */
+  --light-background-colorbackgroundcontent: #fff;
+  --light-background-colorbackground: #f9f9f9;
+  --color-whitesmoke-100: #f3f3f3;
+  --colorgreen: #52a754;
+  --color-mediumseagreen-100: rgba(82, 167, 84, 0.1);
+  --light-text-colortextprimary: #2c2d2e;
+  --light-text-colortextsecondary: #87898f;
+  --on-surface-day-primary: rgba(0, 0, 0, 0.87);
+  --colorconstrastsecondary: #ffe3dd;
+  --colorcontrast: #ff7355;
+
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-5xs: 8px;
+  --gap-9xs-5: 3.5px;
+  --gap-9xs: 4px;
+
+  /* Paddings */
+  --padding-3xl: 22px;
+  --padding-4xl: 23px;
+  --padding-mid: 17px;
+  --padding-7xs: 6px;
+  --padding-base: 16px;
+  --padding-6xs: 7px;
+  --padding-5xs: 8px;
+  --padding-xs: 12px;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+  --br-8xs: 5px;
+  --br-base: 16px;
+  --br-5xs: 8px;
+  --br-xs: 12px;
+  --br-5xl: 24px;
 }

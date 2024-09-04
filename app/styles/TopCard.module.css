@@ -1,118 +1,132 @@
-/* TopCard.module.css */
-
-.topCard {
-  box-sizing: border-box;
-  position: absolute;
-  width: 328px;
-  height: 156px;
-  left: 16px;
-  top: 112px;
-  background: #FFFFFF;
-  border: 1px solid #F3F3F3;
-  border-radius: 20px;
+.contentChild {
+  height: 58px;
+  width: 58px;
+  position: relative;
 }
-
-.categoryGroup {
-  position: absolute;
-  width: 85px;
-  height: 46px;
-  left: 98px;
-  top: 30px;
+.a,
+.div {
+  position: relative;
+  display: inline-block;
 }
-
-.categoryTitle {
-  position: absolute;
-  width: 85px;
-  height: 26px;
-  left: 98px;
-  top: 30px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
+.a {
+  text-decoration: none;
   line-height: 26px;
-  display: flex;
-  align-items: center;
-  color: #2C2D2E;
+  font-weight: 600;
+  color: inherit;
+  min-width: 86px;
 }
-
-.categoryText {
-  position: absolute;
-  width: 75px;
-  height: 20px;
-  left: 98px;
-  top: 56px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+.div {
+  font-size: var(--paragraph-regular-03-size);
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #87898F;
+  color: var(--light-text-colortextsecondary);
+  min-width: 75px;
 }
-
-.iconRight {
-  position: absolute;
+.categories,
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.categories {
+  flex: 1;
+  padding: var(--padding-7xs) 0 0;
+}
+.filledChevronCircleRight {
   width: 24px;
   height: 24px;
-  right: 24px;
-  top: 41px;
-  background: #87898F;
-  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
 }
-
-.progressGroup {
-  position: absolute;
-  width: 280px;
-  height: 34px;
-  left: 24px;
-  top: 98px;
-}
-
-.progressBar {
-  position: absolute;
-  height: 6px;
-  border-radius: 5px;
-  background: #52A754;
-}
-
-.progressBar.opacityLow {
-  opacity: 0.1;
-}
-
-.statusText {
-  position: absolute;
-  width: 214px;
-  height: 20px;
-  left: 24px;
-  top: 98px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+.content,
+.progressIndicator {
   display: flex;
-  align-items: flex-end;
-  color: #2C2D2E;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.progressIndicator {
+  flex-direction: column;
+  padding: var(--padding-mid) 0 0;
+}
+.content {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.questionsOutOf {
+  position: relative;
+  line-height: 20px;
+}
+.progressSteps,
+.progressSteps1 {
+  height: 6px;
+  width: 37px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  background-color: var(--colorgreen);
+}
+.progressSteps1 {
+  width: 36px;
+}
+.progressSteps2,
+.progressSteps3,
+.progressSteps4,
+.progressSteps5,
+.progressSteps6 {
+  height: 6px;
+  width: 38px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-mediumseagreen-100);
+}
+.progressSteps3,
+.progressSteps4,
+.progressSteps5,
+.progressSteps6 {
+  width: 36px;
+}
+.progressSteps4,
+.progressSteps5,
+.progressSteps6 {
+  width: 37px;
+}
+.progressSteps5,
+.progressSteps6 {
+  width: 38px;
+}
+.progressSteps6 {
+  width: 37px;
+}
+.progressBar,
+.questionsOutOf730PassedParent,
+.topCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs-5);
+}
+.questionsOutOf730PassedParent,
+.topCard {
+  flex-direction: column;
+  gap: var(--gap-5xs);
+  font-size: var(--paragraph-regular-03-size);
+}
+.topCard {
+  width: 328px;
+  border-radius: var(--br-xl);
+  background-color: var(--light-background-colorbackgroundcontent);
+  border: 1px solid var(--color-whitesmoke-100);
+  box-sizing: border-box;
+  padding: var(--padding-3xl) var(--padding-4xl);
+  gap: var(--gap-base);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--header-4-size);
+  color: var(--light-text-colortextprimary);
+  font-family: var(--paragraph-regular-03);
 }
 
-.avatarGroup {
-  position: absolute;
-  width: 58px;
-  height: 58px;
-  left: 24px;
-  top: 24px;
-  background: #FFE3DD;
-  opacity: 0.5;
-  border-radius: 50%;
-}
 
-.avatarIcon {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  left: calc(50% - 16px);
-  top: calc(50% - 16px);
-  background: #FF7355;
-}
