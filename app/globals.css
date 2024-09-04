@@ -13,7 +13,6 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
@@ -28,14 +27,4 @@ main {
   height: 800px;
   background: #f9f9f9;
   margin: auto;
-}
-
-.appbar {
-  position: absolute;
-  width: 360px;
-  height: 56px;
-  left: 0px;
-  top: 48px;
-  background: #f9f9f9;
-  border-radius: 0px 0px 16px 16px;
 }

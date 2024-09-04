@@ -1,0 +1,25 @@
+.appbar {
+  position: absolute;
+  width: 360px;
+  height: 56px;
+  left: 0px;
+  top: 48px;
+  background: #f9f9f9;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.appbar_title {
+  position: absolute;
+  width: 75px;
+  height: 26px;
+  left: 56px;
+  top: calc(50% - 26px / 2);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #2c2d2e;
+}
