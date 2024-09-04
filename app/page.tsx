@@ -1,15 +1,11 @@
-import appBar from "./components/appBar";
-import topCard from "./components/topCard";
-import Image from "next/image";
-import crown from "../public/crown.svg";
-import fire from "../public/fire.svg";
-import styles from './styles/AppBar.module.css';
+import AppBar from "./components/appBar";
+import TopCard from "./components/topCard";
 
 export default function Home() {
   return (
     <main>
-      <appBar />
-      <topCard />
+      <AppBar />
+      <TopCard />
     </main>
   );
 }
