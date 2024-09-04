@@ -23,3 +23,60 @@
   align-items: center;
   color: #2c2d2e;
 }
+.tab {
+  display: flex;
+  color: #ff7355;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  position: absolute;
+  width: 328px;
+  height: 50px;
+  left: calc(50% - 328px / 2);
+  top: 104px;
+}
+
+.tab_line {
+  position: absolute;
+  width: 109px;
+  height: 2px;
+  background: #ff7355;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  bottom: 0;
+}
+
+.arrow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 16px;
+  top: calc(50% - 24px / 2);
+}
+
+.grid-container {
+  top: 180px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 33px;
+}
+
+.grid-item {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  width: 71px;
+  height: 71px;
+  box-shadow: inset -5px -5px 0px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  color: black;
+}
