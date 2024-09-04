@@ -1,0 +1,64 @@
+/* App Bar */
+.appbar {
+  position: absolute;
+  width: 360px;
+  height: 56px;
+  left: 0px;
+  top: 48px;
+  background: #F9F9F9;
+  border-radius: 0px 0px 16px 16px;
+}
+
+/* Title */
+.appbar_title {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2C2D2E;
+}
+
+/* right icons */
+.rightIcons {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+/* Buttons */
+.button1, .button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 36px;
+  height: 32px;
+}
+
+.button2 {
+  padding: 7px 8px;
+  width: 60px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Fire Text */
+.fireText {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2C2D2E;
+  margin-left: 4px;
+}
