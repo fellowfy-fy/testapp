@@ -10,6 +10,7 @@
 }
 
 .grid_item {
+  position: relative;
   background-color: white;
   border-radius: 50%;
   display: flex;
@@ -21,4 +22,12 @@
   box-shadow: inset -5px -5px 0px rgba(0, 0, 0, 0.05);
   font-size: 18px;
   color: black;
+}
+
+.checked {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 0px;
+  top: 0px;
 }
